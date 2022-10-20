@@ -1,0 +1,27 @@
+{
+  "calendarSources": [
+    {
+      "type": "local",
+      "color": "hsl( 254,  80%, calc( 68% - 3.8%))",
+      "directory": "Calender"
+    },
+    {
+      "type": "local",
+      "color": "#186fe2",
+      "directory": "Calender/Blue- Recuring"
+    },
+    {
+      "type": "local",
+      "color": "#d01b1b",
+      "directory": "Calender/Red - impt"
+    },
+    {
+      "type": "local",
+      "color": "#26c061",
+      "directory": "Calender/Green - health"
+    }
+  ],
+  "defaultCalendar": 0,
+  "recursiveLocal": false,
+  "firstDay": 0
+}
