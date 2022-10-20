@@ -8,14 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "58d275c0ba2dc8ad",
-            "type": "leaf",
-            "state": {
-              "type": "full-calendar-view",
-              "state": {}
-            }
-          },
-          {
             "id": "81bf6912d872e69c",
             "type": "leaf",
             "state": {
@@ -156,7 +148,7 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "58d275c0ba2dc8ad",
+  "active": "d0754dbfb90e7a70",
   "lastOpenFiles": [
     "🌟HackNotes/EJPT notes.md",
     "🌟HackNotes/C++/File_stealer.md",
