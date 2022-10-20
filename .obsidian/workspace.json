@@ -25,26 +25,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/Python/Python code.md",
+                "file": "🌟HackNotes/Python/Python server-client.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "566cfe7ab51bb6a9",
+            "id": "9400ca3fb636fd1e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/Python/Simple python server.md",
+                "file": "🌟HackNotes/Python/Port Scanner.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4331448d1459c022",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🌟HackNotes/Python/python backdoor.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "91938b8153a2338d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🌟HackNotes/Python/Python http requests.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌟HackNotes/Python/Simple python server.md",
+                "file": "🌟HackNotes/Python/Python http requests.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌟HackNotes/Python/Simple python server.md",
+                "file": "🌟HackNotes/Python/Python http requests.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌟HackNotes/Python/Simple python server.md"
+                "file": "🌟HackNotes/Python/Python http requests.md"
               }
             }
           },
@@ -173,16 +197,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "566cfe7ab51bb6a9",
+  "active": "91938b8153a2338d",
   "lastOpenFiles": [
+    "🌟HackNotes/Python/python backdoor.md",
+    "🌟HackNotes/Python/Port Scanner.md",
+    "🌟HackNotes/Python/Python server-client.md",
     "🌟HackNotes/Python/Python code.md",
     "🌟HackNotes/C++/C++ notes.md",
     "🌟HackNotes/C++/File_stealer.md",
     "🌟HackNotes/C++/Keylogger.md",
     "🌟HackNotes/EJPT notes.md",
     "Misc/Obsidian featureas.md",
-    "Calender/Blue- Recuring/(Every U) Run).md",
-    "Calender/Red - impt/2022-10-20 Ejpt prep.md",
-    "2022-10-19.md"
+    "Calender/Blue- Recuring/(Every U) Run).md"
   ]
 }
