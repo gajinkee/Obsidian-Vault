@@ -1,5 +1,5 @@
 ## <u>Dictionaries</u>
-
+#codenotes
 - mapping objects
 - key pair mapping
 - like list but must use keys to access value instead of indices

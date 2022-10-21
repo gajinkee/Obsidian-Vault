@@ -13,9 +13,103 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/C++/C++ notes.md",
+                "file": "🌟HackNotes/EJPT notes/Python/Python http requests.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "4b4fd84b4a9fc896",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🌟HackNotes/EJPT notes/Python/Webportal attack scripts.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b2bfddd53b56f0f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🌟HackNotes/EJPT notes/Pentest Basics/Info gathering.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "098c4bbdf5f7c180",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🌟HackNotes/EJPT notes/Pentest Basics/Footprinting.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d59001c1ef72b577",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🌟HackNotes/EJPT notes/Pentest Basics/Vulnerability Assesment.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ff580defb56374cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "48a045606e8e689a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🌟HackNotes/EJPT notes/Pentest Basics/System attacks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e8fda29ef37c568c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🌟HackNotes/EJPT notes/Pentest Basics/Network Attacks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bdc1a8cbead0bc40",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20221020181717.png"
               }
             }
           },
@@ -25,7 +119,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/Python/Python server-client.md",
+                "file": "🌟HackNotes/EJPT notes/Python/Python server-client.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +131,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/Python/Port Scanner.md",
+                "file": "🌟HackNotes/EJPT notes/Python/Port Scanner.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +143,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/Python/python backdoor.md",
+                "file": "🌟HackNotes/EJPT notes/Python/python backdoor.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,14 +155,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/Python/Python http requests.md",
+                "file": "🌟HackNotes/EJPT notes/Python/Python http requests.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -134,7 +228,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌟HackNotes/Python/Python http requests.md",
+                "file": "Pasted image 20221020181717.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +245,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌟HackNotes/Python/Python http requests.md",
+                "file": "Pasted image 20221020181717.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +268,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌟HackNotes/Python/Python http requests.md"
+                "file": "Pasted image 20221020181717.png"
               }
             }
           },
@@ -191,23 +285,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "91938b8153a2338d",
+  "active": "bdc1a8cbead0bc40",
   "lastOpenFiles": [
-    "🌟HackNotes/Python/python backdoor.md",
-    "🌟HackNotes/Python/Port Scanner.md",
-    "🌟HackNotes/Python/Python server-client.md",
-    "🌟HackNotes/Python/Python code.md",
-    "🌟HackNotes/C++/C++ notes.md",
-    "🌟HackNotes/C++/File_stealer.md",
-    "🌟HackNotes/C++/Keylogger.md",
-    "🌟HackNotes/EJPT notes.md",
-    "Misc/Obsidian featureas.md",
-    "Calender/Blue- Recuring/(Every U) Run).md"
+    "README.md",
+    "Pasted image 20221020181717.png",
+    "🌟HackNotes/EJPT notes/Bash/Bashnotes.md",
+    "🌟HackNotes/EJPT notes/C++/C++ notes.md",
+    "🌟HackNotes/EJPT notes/Python/Python code.md",
+    "🌟HackNotes/EJPT notes/Python/python backdoor.md",
+    "🌟HackNotes/EJPT notes/Python/Port Scanner.md",
+    "🌟HackNotes/EJPT notes/Python/Python http requests.md",
+    "🌟HackNotes/EJPT notes/Python/Webportal attack scripts.md",
+    "🌟HackNotes/EJPT notes/Pentest Basics/Network Attacks.md"
   ]
 }
