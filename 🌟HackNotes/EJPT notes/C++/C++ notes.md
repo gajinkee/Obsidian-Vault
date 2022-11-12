@@ -6,6 +6,7 @@ cin.ignore
 
 ```
 
+```
 ## Operators
 1. Arithmetic
 	- + - * / 
