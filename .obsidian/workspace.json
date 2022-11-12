@@ -11,11 +11,9 @@
             "id": "ff580defb56374cc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted image 20221030180119.png"
               }
             }
           },
@@ -97,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md",
+                "file": "Pasted image 20221030180119.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md",
+                "file": "Pasted image 20221030180119.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md"
+                "file": "Pasted image 20221030180119.png"
               }
             }
           },
@@ -158,15 +156,15 @@
   },
   "active": "ff580defb56374cc",
   "lastOpenFiles": [
+    "portscommon.png",
+    "Pasted image 20221020181717.png",
+    "README.md",
+    "commonports.png",
+    "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md",
     "🌟HackNotes/EJPT notes/Pentest Basics/System attacks.md",
     "🌟HackNotes/EJPT notes/Pentest Basics/Network Attacks.md",
     "🌟HackNotes/EJPT notes/Pentest Basics/Blackbox tests.md",
     "🌟HackNotes/EJPT notes/Pentest Basics/Info gathering.md",
-    "🌟HackNotes/EJPT notes/Pentest Basics/Vulnerability Assesment.md",
-    "🌟HackNotes/EJPT notes/Pentest Basics/FootPrinting_Scanning.md",
-    "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md",
-    "🌟HackNotes/EJPT notes/C++/Keylogger.md",
-    "🌟HackNotes/EJPT notes/C++/C++ notes.md",
-    "🌟HackNotes/EJPT notes/C++/File_stealer.md"
+    "🌟HackNotes/EJPT notes/Pentest Basics/Vulnerability Assesment.md"
   ]
 }
