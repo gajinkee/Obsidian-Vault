@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md",
+                "file": "🌟HackNotes/EJPT notes/Pentest Basics/Network Attacks.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "pwd",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +77,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md",
+                "file": "🌟HackNotes/EJPT notes/Pentest Basics/Network Attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md",
+                "file": "🌟HackNotes/EJPT notes/Pentest Basics/Network Attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md"
+                "file": "🌟HackNotes/EJPT notes/Pentest Basics/Network Attacks.md"
               }
             }
           },
@@ -156,17 +157,17 @@
     "direction": "horizontal",
     "width": 200
   },
-  "active": "ff580defb56374cc",
+  "active": "f2427a46d15481c5",
   "lastOpenFiles": [
     "🌟HackNotes/EJPT notes/Pentest Basics/System attacks.md",
-    "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md",
-    "🌟HackNotes/EJPT notes/Pentest Basics/Vulnerability Assesment.md",
-    "🌟HackNotes/EJPT notes/Pentest Basics/Blackbox tests.md",
     "🌟HackNotes/EJPT notes/Pentest Basics/Network Attacks.md",
-    "Pasted image 20221030180119.png",
-    "portscommon.png",
-    "Pasted image 20221020181717.png",
-    "README.md",
-    "commonports.png"
+    "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md",
+    "🌟HackNotes/EJPT notes/Pentest Basics/Info gathering.md",
+    "🌟HackNotes/EJPT notes/Pentest Basics/Blackbox tests.md",
+    "🌟HackNotes/EJPT notes/Pentest Basics/FootPrinting_Scanning.md",
+    "🌟HackNotes/EJPT notes/Pentest Basics/Vulnerability Assesment.md",
+    "🌟HackNotes/EJPT notes/C++/File_stealer.md",
+    "🌟HackNotes/EJPT notes/C++/C++ notes.md",
+    "🌟HackNotes/EJPT notes/C++/Keylogger.md"
   ]
 }
