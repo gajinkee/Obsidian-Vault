@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/EJPTv2/Untitled 1.md",
+                "file": "🌟HackNotes/EJPTv2/WebApp pentest.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/EJPTv2/Untitled 2.md",
+                "file": "🌟HackNotes/EJPTv2/Assesment methodologies.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/EJPTv2/Untitled 3.md",
+                "file": "🌟HackNotes/EJPTv2/Network pentest 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -154,7 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 204.5
   },
   "right": {
     "id": "e3fcafb2974e6dad",
@@ -241,17 +241,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d0754dbfb90e7a70",
+  "active": "4802137411065be2",
   "lastOpenFiles": [
-    "🌟HackNotes/EJPT notes/Pentest Basics/Info gathering.md",
+    "🌟HackNotes/EJPTv2/Network auditing.md",
+    "🌟HackNotes/EJPTv2/WebApp pentest.md",
+    "🌟HackNotes/EJPTv2/Network pentest 1.md",
+    "🌟HackNotes/EJPTv2/Network pentest 2.md",
     "🌟HackNotes/EJPTv2/Assesment methodologies.md",
-    "🌟HackNotes/EJPTv2/Untitled 4.md",
-    "🌟HackNotes/EJPTv2/Untitled 3.md",
-    "🌟HackNotes/EJPTv2/Untitled 2.md",
-    "🌟HackNotes/EJPTv2/Untitled 1.md",
+    "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md",
+    "🌟HackNotes/EJPT notes/Pentest Basics/Info gathering.md",
     "🌟HackNotes/EJPT notes/Pentest Basics/System attacks.md",
     "🌟HackNotes/EJPT notes/Pentest Basics/Network Attacks.md",
-    "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md",
     "🌟HackNotes/EJPT notes/Pentest Basics/FootPrinting_Scanning.md"
   ]
 }
