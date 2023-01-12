@@ -44,54 +44,6 @@
             }
           },
           {
-            "id": "d00aaa11c7adcec8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/EJPTv2/Assesment methodologies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "885ae83587ac0154",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/EJPTv2/WebApp pentest.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4802137411065be2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/EJPTv2/Assesment methodologies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "743065f069254f34",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/EJPTv2/Network pentest 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "d6deb7982851cfad",
             "type": "leaf",
             "state": {
@@ -104,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -241,17 +193,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4802137411065be2",
+  "active": "d0754dbfb90e7a70",
   "lastOpenFiles": [
-    "🌟HackNotes/EJPTv2/Network auditing.md",
-    "🌟HackNotes/EJPTv2/WebApp pentest.md",
-    "🌟HackNotes/EJPTv2/Network pentest 1.md",
-    "🌟HackNotes/EJPTv2/Network pentest 2.md",
-    "🌟HackNotes/EJPTv2/Assesment methodologies.md",
-    "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md",
-    "🌟HackNotes/EJPT notes/Pentest Basics/Info gathering.md",
-    "🌟HackNotes/EJPT notes/Pentest Basics/System attacks.md",
     "🌟HackNotes/EJPT notes/Pentest Basics/Network Attacks.md",
+    "🌟HackNotes/EJPT notes/Pentest Basics/System attacks.md",
+    "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md",
+    "🌟HackNotes/EJPTv2/Assesment methodologies.md",
+    "🌟HackNotes/EJPTv2/Network pentest 1.md",
+    "🌟HackNotes/EJPTv2/WebApp pentest.md",
+    "🌟HackNotes/EJPTv2/Network auditing.md",
+    "🌟HackNotes/EJPTv2/Network pentest 2.md",
+    "🌟HackNotes/EJPT notes/Pentest Basics/Info gathering.md",
     "🌟HackNotes/EJPT notes/Pentest Basics/FootPrinting_Scanning.md"
   ]
 }

