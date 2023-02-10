@@ -118,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 204.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e3fcafb2974e6dad",
@@ -207,12 +208,12 @@
   },
   "active": "d6deb7982851cfad",
   "lastOpenFiles": [
+    "🌟HackNotes/EJPTv2/Garbage Lab notes.md",
+    "🌟HackNotes/EJPTv2/Network pentest 1.md",
     "🌟HackNotes/EJPTv2/WebApp pentest.md",
     "🌟HackNotes/EJPTv2/Network pentest 2.md",
-    "🌟HackNotes/EJPTv2/Network pentest 1.md",
     "🌟HackNotes/EJPTv2/Network auditing.md",
     "🌟HackNotes/EJPTv2/Assesment methodologies.md",
-    "🌟HackNotes/EJPTv2/Garbage Lab notes.md",
     "portscommon.png",
     "🌟HackNotes/EJPT notes/Pentest Basics/System attacks.md",
     "🌟HackNotes/EJPT notes/Pentest Basics/Network Attacks.md",
