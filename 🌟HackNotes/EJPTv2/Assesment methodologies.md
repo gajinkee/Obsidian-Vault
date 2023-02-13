@@ -387,7 +387,7 @@ msfconsole
 ```msfconsole
 use auxiliary/scanner/ssh/ssh_login
 set ...
-set userpass_file /user/share/wordlists/metasploit/root_userpass.txt
+set userpass_file /usr/share/wordlists/metasploit/root_userpass.txt
 set STOP_ON_SUCCESS true
 ```
 ## HTTP
@@ -681,7 +681,7 @@ pwlength: 100
 
 Server sends back: confirmed, abcdt1g3j12j3jasddfg3.... (up to the 100 char length)
 
-2. EternalBlue MS17-010 (CVE-2017-0143)
+2. EternalBlue MS17-010 (CVE-2017-0143/144)
 Part of the ransomware wannacry attack, Zeroday exploit that took adv of smbv1 in many windows OS's
 Bufferoverflow used
 nmap script to scan : smb-vuln-ms17-010

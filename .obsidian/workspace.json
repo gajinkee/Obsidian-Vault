@@ -8,43 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ff580defb56374cc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8a910b5e1375ce30",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/EJPT notes/Pentest Basics/Network Attacks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "48a045606e8e689a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/EJPT notes/Pentest Basics/System attacks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d6deb7982851cfad",
+            "id": "5e444a55c0eb9224",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -54,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "5e444a55c0eb9224",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/EJPTv2/Garbage Lab notes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "msfvenom",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -192,7 +143,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,17 +158,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d6deb7982851cfad",
+  "active": "5e444a55c0eb9224",
   "lastOpenFiles": [
     "🌟HackNotes/EJPTv2/Garbage Lab notes.md",
+    "Hackthebox/machines/Precious.md",
     "🌟HackNotes/EJPTv2/Network pentest 1.md",
-    "🌟HackNotes/EJPTv2/WebApp pentest.md",
-    "🌟HackNotes/EJPTv2/Network pentest 2.md",
-    "🌟HackNotes/EJPTv2/Network auditing.md",
     "🌟HackNotes/EJPTv2/Assesment methodologies.md",
-    "portscommon.png",
-    "🌟HackNotes/EJPT notes/Pentest Basics/System attacks.md",
     "🌟HackNotes/EJPT notes/Pentest Basics/Network Attacks.md",
-    "Pasted image 20221030180119.png"
+    "🌟HackNotes/EJPTv2/Network auditing.md",
+    "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md",
+    "🌟HackNotes/EJPT notes/Pentest Basics/Blackbox tests.md",
+    "🌟HackNotes/EJPT notes/Pentest Basics/System attacks.md",
+    "🌟HackNotes/EJPT notes/Pentest Basics/Vulnerability Assesment.md"
   ]
 }
