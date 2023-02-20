@@ -13,19 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/EJPTv2/Network pentest 1.md",
+                "file": "🌟HackNotes/EJPTv2/Network pentest 2.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d4df20d3f3ad13fd",
+            "id": "14df29e7ad042724",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tryhackme/Jr pentester path/Pentest Fundamentals.md",
+                "file": "🌟HackNotes/Hackthebox/machines/Precious.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "msfvenom",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tryhackme/Jr pentester path/Pentest Fundamentals.md",
+                "file": "🌟HackNotes/Hackthebox/machines/Precious.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tryhackme/Jr pentester path/Pentest Fundamentals.md",
+                "file": "🌟HackNotes/Hackthebox/machines/Precious.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tryhackme/Jr pentester path/Pentest Fundamentals.md"
+                "file": "🌟HackNotes/Hackthebox/machines/Precious.md"
               }
             }
           },
@@ -170,17 +170,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d4df20d3f3ad13fd",
+  "active": "14df29e7ad042724",
   "lastOpenFiles": [
+    "🌟HackNotes/Hackthebox/machines/Stockers.md",
+    "🌟HackNotes/EJPTv2/Network pentest 2.md",
+    "🌟HackNotes/Hackthebox/machines/Precious.md",
+    "🌟HackNotes/Hackthebox/machines/Flight (hard).md",
+    "🌟HackNotes/Tryhackme/Jr pentester path/Pentest Fundamentals.md",
+    "🌟HackNotes/EJPTv2/Assesment methodologies.md",
+    "🌟HackNotes/EJPTv2/WebApp pentest.md",
     "🌟HackNotes/EJPTv2/Network pentest 1.md",
     "🌟HackNotes/EJPTv2/Garbage Lab notes.md",
-    "Hackthebox/machines/Precious.md",
-    "🌟HackNotes/EJPTv2/Assesment methodologies.md",
-    "🌟HackNotes/EJPT notes/Pentest Basics/Network Attacks.md",
-    "🌟HackNotes/EJPTv2/Network auditing.md",
-    "🌟HackNotes/EJPT notes/Pentest Basics/Web Attacks.md",
-    "🌟HackNotes/EJPT notes/Pentest Basics/Blackbox tests.md",
-    "🌟HackNotes/EJPT notes/Pentest Basics/System attacks.md",
-    "🌟HackNotes/EJPT notes/Pentest Basics/Vulnerability Assesment.md"
+    "README.md"
   ]
 }

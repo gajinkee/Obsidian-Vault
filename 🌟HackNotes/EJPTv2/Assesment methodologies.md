@@ -349,7 +349,7 @@ FTP anon login --> "anonymous" user doesnt need password
 ## SSH
 port: 22
 interact with a remote shell over an encrypted channel
-First determine if its windows or linux, linux always has root@192.12.11.2
+First determine if its windows or linux, linux always has root@[ipaddr]
 Connect
 ```bash
 ssh root@192.244.123.3
