@@ -107,3 +107,12 @@ b90a5785e9d0a7bc49ba693ec58ccec3
 
 # Holy fk
 done
+
+Learning pts:
+NTLM auth 
+Always check for different users with same password
+Releases part of github repo usually has exe's ready to use
+
+
+Confused:
+How do these walkthroughs get the source code???

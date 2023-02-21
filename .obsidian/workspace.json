@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/EJPTv2/Network pentest 2.md",
+                "file": "🌟HackNotes/EJPTv2/Network pentest 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌟HackNotes/Hackthebox/machines/Precious.md",
+                "file": "🌟HackNotes/EJPTv2/Network pentest 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌟HackNotes/Hackthebox/machines/Precious.md",
+                "file": "🌟HackNotes/EJPTv2/Network pentest 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌟HackNotes/Hackthebox/machines/Precious.md"
+                "file": "🌟HackNotes/EJPTv2/Network pentest 1.md"
               }
             }
           },
@@ -170,16 +169,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "14df29e7ad042724",
+  "active": "5e444a55c0eb9224",
   "lastOpenFiles": [
-    "🌟HackNotes/Hackthebox/machines/Stockers.md",
-    "🌟HackNotes/EJPTv2/Network pentest 2.md",
     "🌟HackNotes/Hackthebox/machines/Precious.md",
+    "🌟HackNotes/EJPTv2/Network pentest 1.md",
+    "🌟HackNotes/EJPTv2/Network pentest 2.md",
     "🌟HackNotes/Hackthebox/machines/Flight (hard).md",
+    "🌟HackNotes/Hackthebox/machines/Stockers.md",
     "🌟HackNotes/Tryhackme/Jr pentester path/Pentest Fundamentals.md",
     "🌟HackNotes/EJPTv2/Assesment methodologies.md",
     "🌟HackNotes/EJPTv2/WebApp pentest.md",
-    "🌟HackNotes/EJPTv2/Network pentest 1.md",
     "🌟HackNotes/EJPTv2/Garbage Lab notes.md",
     "README.md"
   ]
