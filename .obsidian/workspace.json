@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/Hackthebox/Challenges/WeatherApp.md",
+                "file": "🌟HackNotes/EJPTv2/Network pentest (Linux).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "79678e201daa09f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🌟HackNotes/EJPTv2/Network pentest (Windows).md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 228.5
   },
   "right": {
     "id": "e3fcafb2974e6dad",
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌟HackNotes/Hackthebox/Challenges/WeatherApp.md",
+                "file": "🌟HackNotes/EJPTv2/Network pentest (Linux).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌟HackNotes/Hackthebox/Challenges/WeatherApp.md",
+                "file": "🌟HackNotes/EJPTv2/Network pentest (Linux).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌟HackNotes/Hackthebox/Challenges/WeatherApp.md"
+                "file": "🌟HackNotes/EJPTv2/Network pentest (Linux).md"
               }
             }
           },
@@ -159,13 +171,13 @@
   },
   "active": "a5e12f767a785e72",
   "lastOpenFiles": [
-    "🌟HackNotes/EJPTv2/Network pentest 1.md",
+    "🌟HackNotes/EJPTv2/Network pentest (Windows).md",
+    "🌟HackNotes/EJPTv2/Network pentest (Linux).md",
     "🌟HackNotes/Hackthebox/Challenges/WeatherApp.md",
     "🌟HackNotes/Hackthebox/machines/Precious.md",
     "README.md",
     "🌟HackNotes/EJPTv2/WebApp pentest.md",
     "🌟HackNotes/Hackthebox/machines/Flight (hard).md",
-    "🌟HackNotes/EJPTv2/Network pentest 2.md",
     "🌟HackNotes/Hackthebox/machines/Stockers.md",
     "🌟HackNotes/Tryhackme/Jr pentester path/Pentest Fundamentals.md",
     "🌟HackNotes/EJPTv2/Assesment methodologies.md"
