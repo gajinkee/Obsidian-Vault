@@ -8,7 +8,7 @@ Malicious file
 
 1. Add the ip to /etc/hosts file so it loads the page
 2. Set up python server to test the uploads conversion to pdf
-3. use exiftool to analyse pdf
+3. use `exiftool` to analyse pdf
 	- Found out its using a vuln verison of pdfkit v0.8.6
 	- Google it to find command injection is possible
 	- Tried using ``"http://10.10.XX.XX/?name=%20#{id}"`` but didnt work
