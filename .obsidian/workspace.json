@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/EJPTv2/Network pentest (Wire).md",
+                "file": "🌟HackNotes/EJPTv2/Network pentest (MSF).md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "postgre",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 228.5
+    "width": 200
   },
   "right": {
     "id": "e3fcafb2974e6dad",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌟HackNotes/EJPTv2/Network pentest (Wire).md",
+                "file": "🌟HackNotes/EJPTv2/Network pentest (MSF).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌟HackNotes/EJPTv2/Network pentest (Wire).md",
+                "file": "🌟HackNotes/EJPTv2/Network pentest (MSF).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌟HackNotes/EJPTv2/Network pentest (Wire).md"
+                "file": "🌟HackNotes/EJPTv2/Network pentest (MSF).md"
               }
             }
           },
@@ -159,23 +159,29 @@
   },
   "active": "8c85acd21c7b9d1d",
   "lastOpenFiles": [
-    "🌟HackNotes/EJPTv2/Network pentest (Windows).md",
-    "🌟HackNotes/EJPTv2/Network pentest (Linux).md",
-    "🌟HackNotes/EJPTv2/Network pentest (MSF).md",
-    "🌟HackNotes/EJPTv2/Network pentest (PostEx).md",
     "🌟HackNotes/EJPTv2/Network pentest (Exploit).md",
-    "🌟HackNotes/EJPTv2/Network pentest (Social Engi).md",
-    "🌟HackNotes/Hackthebox/machines/Precious.md",
-    "🌟HackNotes/EJPTv2/Assesment methodologies.md",
-    "🌟HackNotes/EJPTv2/Network auditing.md",
-    "🌟HackNotes/EJPTv2/Network pentest (Wire).md",
+    "🌟HackNotes/EJPTv2/Network pentest (PostEx).md",
     "🌟HackNotes/EJPTv2/Garbage Lab notes.md",
-    "🌟HackNotes/EJPTv2/WebApp pentest.md",
-    "🌟HackNotes/EJPTv2/Untitled.md",
-    "🌟HackNotes/Hackthebox/Challenges/WeatherApp.md",
-    "README.md",
+    "🌟HackNotes/EJPTv2/Network pentest (Windows).md",
+    "🌟HackNotes/EJPTv2/Assesment methodologies.md",
+    "🌟HackNotes/Hackthebox/machines/Precious.md",
     "🌟HackNotes/Hackthebox/machines/Flight (hard).md",
     "🌟HackNotes/Hackthebox/machines/Stockers.md",
-    "🌟HackNotes/Tryhackme/Jr pentester path/Pentest Fundamentals.md"
+    "🌟HackNotes/Tryhackme/Jr pentester path/Pentest Fundamentals.md",
+    "README.md",
+    "Misc/Pasted image 20221020181717.png",
+    "Misc/portscommon.png",
+    "Misc/Pasted image 20221030180119.png",
+    "Misc/Obsidian featureas.md",
+    "Misc/Pasted image 20230129194544.png",
+    "Misc/Screenshot 2023-03-04 150008.png",
+    "🌟HackNotes/EJPTv2/Network pentest (MSF).md",
+    "🌟HackNotes/EJPTv2/Network pentest (Linux).md",
+    "🌟HackNotes/EJPTv2/Network pentest (Social Engi).md",
+    "🌟HackNotes/EJPTv2/Network pentest (Wire).md",
+    "🌟HackNotes/EJPTv2/Network auditing.md",
+    "🌟HackNotes/EJPTv2/WebApp pentest.md",
+    "🌟HackNotes/EJPTv2/Untitled.md",
+    "🌟HackNotes/Hackthebox/Challenges/WeatherApp.md"
   ]
 }
