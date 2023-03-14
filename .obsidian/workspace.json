@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "postgre",
+                "query": "analy",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -157,7 +158,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8c85acd21c7b9d1d",
+  "active": "f2427a46d15481c5",
   "lastOpenFiles": [
     "🌟HackNotes/EJPTv2/Network pentest (Wire).md",
     "🌟HackNotes/EJPTv2/Network pentest (MSF).md",
