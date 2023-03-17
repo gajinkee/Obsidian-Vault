@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "analy",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -160,20 +159,24 @@
   },
   "active": "8c85acd21c7b9d1d",
   "lastOpenFiles": [
-    "🌟HackNotes/EJPTv2/Network pentest (Wire).md",
-    "🌟HackNotes/EJPTv2/Network pentest (MSF).md",
-    "🌟HackNotes/EJPTv2/Network auditing.md",
-    "🌟HackNotes/EJPTv2/Assesment methodologies.md",
-    "🌟HackNotes/EJPTv2/Network pentest (Social Engi).md",
     "🌟HackNotes/EJPTv2/Network pentest (PostEx).md",
-    "🌟HackNotes/EJPTv2/Network pentest (Exploit).md",
-    "🌟HackNotes/EJPTv2/Network pentest (Linux).md",
     "🌟HackNotes/EJPTv2/Network pentest (Windows).md",
     "🌟HackNotes/EJPTv2/Garbage Lab notes.md",
-    "🌟HackNotes/Tryhackme/Jr pentester path/Pentest Fundamentals.md",
-    "🌟HackNotes/Hackthebox/machines/Stockers.md",
+    "🌟HackNotes/EJPTv2/Network pentest (MSF).md",
+    "🌟HackNotes/Hackthebox/Challenges/WeatherApp.md",
+    "🌟HackNotes/Hackthebox/machines/Soccer.md",
     "🌟HackNotes/Hackthebox/machines/Precious.md",
+    "🌟HackNotes/Hackthebox/machines/Stockers.md",
     "🌟HackNotes/Hackthebox/machines/Flight (hard).md",
+    "🌟HackNotes/EJPTv2/Network pentest (Wire).md",
+    "🌟HackNotes/EJPTv2/Network auditing.md",
+    "🌟HackNotes/EJPTv2/Network pentest (Exploit).md",
+    "🌟HackNotes/EJPTv2/Network pentest (Linux).md",
+    "🌟HackNotes/Hackthebox/machines/Untitled",
+    "🌟HackNotes/EJPTv2/Assesment methodologies.md",
+    "🌟HackNotes/EJPTv1 notes/Pentest Basics/Web Attacks.md",
+    "🌟HackNotes/EJPTv2/Network pentest (Social Engi).md",
+    "🌟HackNotes/Tryhackme/Jr pentester path/Pentest Fundamentals.md",
     "README.md",
     "Misc/Pasted image 20221020181717.png",
     "Misc/portscommon.png",
@@ -182,7 +185,6 @@
     "Misc/Pasted image 20230129194544.png",
     "Misc/Screenshot 2023-03-04 150008.png",
     "🌟HackNotes/EJPTv2/WebApp pentest.md",
-    "🌟HackNotes/EJPTv2/Untitled.md",
-    "🌟HackNotes/Hackthebox/Challenges/WeatherApp.md"
+    "🌟HackNotes/EJPTv2/Untitled.md"
   ]
 }
