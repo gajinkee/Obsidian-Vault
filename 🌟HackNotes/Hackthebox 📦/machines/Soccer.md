@@ -215,5 +215,5 @@ Learning areas:
 Polishing:
 - Always check the default creds
 - Use a larger wordlist for dir enums (the default ones rarely work)
-- Always check page source for scripts]
+- Always check page source for scripts (XSS)
 - Puting scripts in tmp then cp it to required location (ie to /usr/bin/dstat) can prevent heaache from it being deleted constantly

