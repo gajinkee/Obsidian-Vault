@@ -20,7 +20,7 @@
 
 - ~ is the current users home directory (echo ~ ,  returns /root or /user etc )
 - * is a wildcard to choose certain file types (ls /etc/* .conf , returns only conf  files)
-- Data between <code> ``</code> and $() are evaluated before statment ei put code between/variables
+- Data between `<code> `` </code>` and $() are evaluated before statment ei put code between/variables
 
 ## Redirectors
 Good for creating oneliners
