@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/EJPTv2/Network pentest (Windows).md",
+                "file": "EJPTv2 Exam/Network 192.168.100.0/192.168.100.55 WIN3 🚩.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,8 +102,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -123,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌟HackNotes/EJPTv2/Network pentest (Windows).md",
+                "file": "EJPTv2 Exam/Network 192.168.100.0/192.168.100.55 WIN3 🚩.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌟HackNotes/EJPTv2/Network pentest (Windows).md",
+                "file": "EJPTv2 Exam/Network 192.168.100.0/192.168.100.55 WIN3 🚩.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌟HackNotes/EJPTv2/Network pentest (Windows).md"
+                "file": "EJPTv2 Exam/Network 192.168.100.0/192.168.100.55 WIN3 🚩.md"
               }
             }
           },
@@ -195,8 +194,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7ae00e12feeb6c5f",
+  "active": "d0754dbfb90e7a70",
   "lastOpenFiles": [
+    "🌟HackNotes/EJPTv2/Network pentest (Windows).md",
     "🌟HackNotes/EJPTv2/Assesment methodologies.md",
     "🌟HackNotes/EJPTv2/Network pentest (PostEx).md",
     "🌟HackNotes/EJPTv2/Network pentest (MSF).md",
@@ -204,7 +204,6 @@
     "🌟HackNotes/Tryhackme/Jr pentester path/Pentest Fundamentals.md",
     "🌟HackNotes/EJPTv1 notes/Pentest Basics/FootPrinting_Scanning.md",
     "🌟HackNotes/Hackthebox 📦/machines/Flight (hard).md",
-    "🌟HackNotes/EJPTv2/Network pentest (Windows).md",
     "🌟HackNotes/EJPTv2/Network pentest (Wire).md",
     "🌟HackNotes/EJPTv1 notes/Pentest Basics/Blackbox tests.md",
     "🌟HackNotes/EJPTv1 notes/Pentest Basics/System attacks.md",
