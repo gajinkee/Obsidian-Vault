@@ -8,223 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d7037e72c78cf678",
+            "id": "972e5abbd8a394ac",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/EJPTv2/Network pentest (MSF).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cebecb9c3d018f1e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/EJPTv2/Assesment methodologies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7ae00e12feeb6c5f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "EJPTv2 Exam/Network 192.168.100.0/192.168.100.55 WIN3 🚩.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7694b0b1666dcaf2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/EJPTv2/Network pentest (MSF).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cfe4e33ad4edbb66",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/CS50/Scratch.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4b972bf01986afea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/CS50/C language/C basics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eac7f5060f041588",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/CS50/C language/Arrays.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "95dc4aa69c97c5be",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/CS50/C language/Algorithms.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bff206215c15723e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/CS50/C language/Memory.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d41cd21d25c6fba3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/CS50/C language/Data Structures.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ba3567cb2a7ddc84",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/CS50/Python.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2a36dcbb5891d7fc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/CS50/SQL.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "78e47839749c3e46",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/CS50/HTML CSS Javascript.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ad9e189b573cd1d1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/CS50/Flask.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "85ad794c1f7a8fd7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/CS50/Cybersecurity.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fa4cc4961ecb496c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/Hackthebox 📦/Day 0 physical notes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5b3c6e3e20a9b630",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/Hackthebox 📦/machines/Timelapse.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a8cb88823f7d104a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌟HackNotes/Hackthebox 📦/Day 0 physical notes.md",
+                "file": "🌟HackNotes/ICCA/Cloud Foundation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 17
+        ]
       }
     ],
     "direction": "vertical"
@@ -290,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌟HackNotes/Hackthebox 📦/Day 0 physical notes.md",
+                "file": "🌟HackNotes/ICCA/Cloud Foundation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -307,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌟HackNotes/Hackthebox 📦/Day 0 physical notes.md",
+                "file": "🌟HackNotes/ICCA/Cloud Foundation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -330,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌟HackNotes/Hackthebox 📦/Day 0 physical notes.md"
+                "file": "🌟HackNotes/ICCA/Cloud Foundation.md"
               }
             }
           },
@@ -362,47 +157,48 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a8cb88823f7d104a",
+  "active": "972e5abbd8a394ac",
   "lastOpenFiles": [
+    "🌟HackNotes/EJPTv1 notes/Pentest Basics/FootPrinting_Scanning.md",
+    "Misc/hacks_4.jpg",
+    "🌟HackNotes/ICCA/Cloud Foundation.md",
+    "Misc/AAS.png",
+    "🌟HackNotes/ICCA/Cloud management.md",
+    "🌟HackNotes/CS50/Cybersecurity.md",
+    "🌟HackNotes/Hackthebox 📦/machines/Timelapse.md",
+    "🌟HackNotes/Hackthebox 📦/Day 0 physical notes.md",
+    "🌟HackNotes/CS50/Flask.md",
+    "🌟HackNotes/CS50/HTML CSS Javascript.md",
+    "🌟HackNotes/CS50/SQL.md",
+    "🌟HackNotes/CS50/Python.md",
+    "🌟HackNotes/CS50/C language/Data Structures.md",
+    "🌟HackNotes/CS50/C language/Memory.md",
+    "🌟HackNotes/CS50/C language/Algorithms.md",
+    "🌟HackNotes/CS50/C language/Arrays.md",
+    "🌟HackNotes/CS50/C language/C basics.md",
+    "🌟HackNotes/CS50/Scratch.md",
+    "🌟HackNotes/EJPTv2/Network pentest (MSF).md",
+    "EJPTv2 Exam/Network 192.168.100.0/192.168.100.55 WIN3 🚩.md",
+    "🌟HackNotes/EJPTv2/Assesment methodologies.md",
+    "🌟HackNotes/ICCA/Cloud Security.md",
+    "🌟HackNotes/ICCA",
+    "🌟HackNotes/Books 📚/Practical web pen (Packt).md",
     "Misc/hacks_3.jpg",
     "Misc/hacks_6.jpg",
     "Misc/hacks_5.jpg",
-    "Misc/hacks_4.jpg",
     "Misc/hacks_1.jpg",
     "Misc/hacks_7.jpg",
     "Misc/hacks_2.jpg",
     "🌟HackNotes/Hackthebox 📦/machines/Red Panda.md",
     "Misc/Pasted image 20230411133250.png",
-    "🌟HackNotes/Hackthebox 📦/machines/Timelapse.md",
     "EJPTv2 Exam/Network 192.168.100.0/192.168.100.52 Linux Drupal 🚩.md",
     "🌟HackNotes/EJPTv2/Network pentest (PostEx).md",
-    "🌟HackNotes/Hackthebox 📦/Day 0 physical notes.md",
-    "🌟HackNotes/CS50/Cybersecurity.md",
     "🌟HackNotes/CS50/Quick quizes.md",
     "README.md",
     "Misc/Screenshot 2023-03-04 150008.png",
-    "Misc/Obsidian featureas.md",
-    "Misc/portscommon.png",
-    "Misc/Pasted image 20221030180119.png",
-    "🌟HackNotes/CS50/Python.md",
-    "🌟HackNotes/CS50/Flask.md",
-    "🌟HackNotes/CS50/HTML CSS Javascript.md",
-    "🌟HackNotes/CS50/SQL.md",
-    "🌟HackNotes/CS50/C language/Data Structures.md",
-    "🌟HackNotes/CS50/C language/Memory.md",
-    "🌟HackNotes/CS50/C language/Algorithms.md",
-    "🌟HackNotes/CS50/C language/Arrays.md",
     "🌟HackNotes/CS50/C language/Untitled",
-    "🌟HackNotes/CS50/C language/C basics.md",
     "🌟HackNotes/CS50/C language",
-    "🌟HackNotes/CS50/Scratch.md",
-    "🌟HackNotes/EJPTv2/Network pentest (MSF).md",
     "🌟HackNotes/CS50",
-    "🌟HackNotes/EJPTv2/Network pentest (Windows).md",
-    "🌟HackNotes/EJPTv2/Assesment methodologies.md",
-    "🌟HackNotes/EJPTv2/WebApp pentest.md",
-    "🌟HackNotes/Tryhackme/Jr pentester path/Pentest Fundamentals.md",
-    "🌟HackNotes/EJPTv1 notes/Pentest Basics/FootPrinting_Scanning.md",
     "🌟HackNotes/Books 📚",
     "🌟HackNotes/Hackthebox/machines/Untitled"
   ]
