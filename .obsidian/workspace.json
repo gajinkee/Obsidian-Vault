@@ -64,6 +64,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "5f22b38fd6bb8420",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -159,11 +167,12 @@
   },
   "active": "972e5abbd8a394ac",
   "lastOpenFiles": [
+    "🌟HackNotes/ICCA/Cloud management.md",
+    "🌟HackNotes/ICCA/Cloud Security.md",
+    "🌟HackNotes/ICCA/Cloud Foundation.md",
     "🌟HackNotes/EJPTv1 notes/Pentest Basics/FootPrinting_Scanning.md",
     "Misc/hacks_4.jpg",
-    "🌟HackNotes/ICCA/Cloud Foundation.md",
     "Misc/AAS.png",
-    "🌟HackNotes/ICCA/Cloud management.md",
     "🌟HackNotes/CS50/Cybersecurity.md",
     "🌟HackNotes/Hackthebox 📦/machines/Timelapse.md",
     "🌟HackNotes/Hackthebox 📦/Day 0 physical notes.md",
@@ -180,7 +189,6 @@
     "🌟HackNotes/EJPTv2/Network pentest (MSF).md",
     "EJPTv2 Exam/Network 192.168.100.0/192.168.100.55 WIN3 🚩.md",
     "🌟HackNotes/EJPTv2/Assesment methodologies.md",
-    "🌟HackNotes/ICCA/Cloud Security.md",
     "🌟HackNotes/ICCA",
     "🌟HackNotes/Books 📚/Practical web pen (Packt).md",
     "Misc/hacks_3.jpg",

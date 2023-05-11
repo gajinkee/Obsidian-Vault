@@ -58,7 +58,7 @@ Other providers
 - private providers
 
 
-# Why the cloud?
+## Why the cloud?
 
 ### Economics
 Storage and Compute requirements
@@ -102,3 +102,34 @@ Why maybe not cloud
 
 
 
+
+
+# Management
+
+## Tools
+1. Web-based
+2. Command line (CLI)
+3. REST API
+
+For the 3 major providers (ie Azure/AWS/GCP)
+1. portal/console -> web interface
+2. CLI/Cloud shell available for all -> allows to write scripts to automate
+-> note the cloud shells make it easier than downloading the CLI for the cloud provider locally
+
+
+Demo:
+AWS
+1) create VM instance (EC2)
+2) change settings
+3) Delete
+
+1) create bucket (S3)
+2) change settings
+3) Delete
+Overall: quite intuitive. Search for service -> create/tweek -> manage
+
+Azure
+Similar but, services are called resources
+and the console abit more cluttered
+
+GCP
