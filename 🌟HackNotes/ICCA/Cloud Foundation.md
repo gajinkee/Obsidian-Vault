@@ -133,3 +133,49 @@ Similar but, services are called resources
 and the console abit more cluttered
 
 GCP
+Similar also...
+
+
+# Cost savings
+- A possible reason why companies choose against cloud
+
+## Cloud pricing models
+- Capacity based
+-> pay per min etc for a given architecture
+
+- Consumption based
+-> eg storage (pay for the amount stored)
+or 
+-> compute (pay for computing used)
+
+- hybrid based (partly capacity partly consumption)
+
+Note: Providers usually provide free data transfer in but must pay to transfer out!!!
+
+TLDR: Providers have cost calculators. Use them.
+
+### Other things to note
+- 3rd party vendor cost (ie premium linux distros)
+- Many tweeking needed to optimise costs (eg using less redudndancy in storage)
+- 
+
+# Cloud Support/SLAs
+(Service Level agreements)
+## Responsibilty
+- Workload
+- Services
+- VMs
+- Management plane
+- Virtualisation
+- Physical Infrastructure
+- Physical Facility
+
+Note: Everthing below Management plan is responsible by cloud provider / Everything above is ur responsibility
+
+Service level agreements (eg when using software as a service)
+Everything below is responsible by cloud, rest by u
+D.P. -> Data plane. Everything here is maaged by the customer
+![[Screenshot 2023-05-13 193520.png]]
+
+Note:
+SLAs are 
