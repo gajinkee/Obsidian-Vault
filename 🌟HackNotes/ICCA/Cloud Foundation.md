@@ -178,4 +178,86 @@ D.P. -> Data plane. Everything here is maaged by the customer
 ![[Screenshot 2023-05-13 193520.png]]
 
 Note:
-SLAs are 
+SLAs are found in the terms conditions. Can be googled for all cloud providers.
+
+
+
+
+
+
+
+
+
+# Cloud Services (Aaas)
+![[Pasted image 20230515114501.png]]
+Typical structure:
+- V-net/VPC (virtual network)
+- VM/EC2
+- Storage (Contains an Image example OS)
+
+The Vnet connects to multiple VMs/Public networks/gateways etc
+
+## VPC 
+- Generally the same across providers
+- Althought the knobs are different typically the type of service is the same
+![[Pasted image 20230515115431.png]]
+
+Same stuff you can do physically can be done on cloud basically.
+- Firewalls/load balancing
+- virtual gateways/private gateways
+- setting subnets/routing
+
+## Virtual Machines
+Things to choose:
+- series -> architecture being used (eg intel vs amd, continuous performance vs burst)
+- size -> each series typically can choose size (memory/storage)
+- Image (OS/Software/Custom image)
+- Security/Access(has some overlap with vnet)
+![[Pasted image 20230515120419.png]]
+
+## Storage
+- if u have VMs u have storage
+- BUT u can have storage without VMs
+Pic gives examples and naming for each provider
+![[Pasted image 20230515120540.png]]
+ 
+
+
+
+# Cloud Platform (Paas)
+Platform as a service
+- Everthing below the workload is provided by the platform
+- Example just host your app
+# Cloud software (Saas)
+- basically you just subscribe to the service
+Examples: 
+- SalesForce
+- Microsoft365 (Email/Teams/File management)
+- basically any software
+
+# Scalability and Availability
+- Can be set to autoscale based on workload
+- lots of nobs to turn
+
+- Lots of redundancy across regions around world 
+- or even within the same datacentre
+
+# Basic Demos
+
+- Azure
+Basic architecture:
+AD for users and rights, assigned roles etc
+Subscription to a resource(VMs/DBS/Storage etc)
+Owner creates all these
+![[Pasted image 20230515124758.png]]
+
+- AWS
+![[Pasted image 20230515125158.png]]
+
+Orgaisation can create multiple accts
+Accts create IAM users which manage resources(region specific)
+
+- Google cloud platforms
+![[Pasted image 20230515125730.png]]
+
+Slightly different approach by using APIs to connect to resource (think of it like user accts)
