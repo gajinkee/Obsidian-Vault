@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/ICCA/Cloud Foundation.md",
+                "file": "🌟HackNotes/ICCA/Cloud Security.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌟HackNotes/ICCA/Cloud Foundation.md",
+                "file": "🌟HackNotes/ICCA/Cloud Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌟HackNotes/ICCA/Cloud Foundation.md",
+                "file": "🌟HackNotes/ICCA/Cloud Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌟HackNotes/ICCA/Cloud Foundation.md"
+                "file": "🌟HackNotes/ICCA/Cloud Security.md"
               }
             }
           },
@@ -167,8 +167,10 @@
   },
   "active": "972e5abbd8a394ac",
   "lastOpenFiles": [
-    "🌟HackNotes/ICCA/Cloud Security.md",
+    "Misc/Pasted image 20230516122403.png",
+    "Misc/Pasted image 20230516122125.png",
     "🌟HackNotes/ICCA/Cloud management.md",
+    "🌟HackNotes/ICCA/Cloud Security.md",
     "🌟HackNotes/ICCA/Cloud Foundation.md",
     "Misc/Pasted image 20230515180512.png",
     "Misc/Pasted image 20230515125730.png",
@@ -179,7 +181,6 @@
     "Misc/Pasted image 20230515115431.png",
     "Misc/Pasted image 20230515114501.png",
     "Misc/Pasted image 20230515114341.png",
-    "Misc/Screenshot 2023-05-13 193520.png",
     "🌟HackNotes/EJPTv1 notes/Pentest Basics/FootPrinting_Scanning.md",
     "🌟HackNotes/CS50/Cybersecurity.md",
     "🌟HackNotes/Hackthebox 📦/machines/Timelapse.md",
