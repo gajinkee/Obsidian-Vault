@@ -100,10 +100,6 @@ Why maybe not cloud
 - Data fencing (security for sensitive data)
 - Regulatory compliance
 
-
-
-
-
 # Management
 
 ## Tools
@@ -179,14 +175,6 @@ D.P. -> Data plane. Everything here is maaged by the customer
 
 Note:
 SLAs are found in the terms conditions. Can be googled for all cloud providers.
-
-
-
-
-
-
-
-
 
 # Cloud Services (Aaas)
 ![[Pasted image 20230515114501.png]]

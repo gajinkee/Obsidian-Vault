@@ -67,9 +67,7 @@ Monitoring Resources
 		
 - Proactivce resource managment (dynamic monitoring)
 	- Cloud automation (autoscaling etc)
-	- Cloud Alerting (fire based-off perfomance/ budget level e
-	- 
-	- tc)
+	- Cloud Alerting (fire based-off perfomance/ budget level etc)
 
 ## Identity and access Management
 Root user -> absolute rights

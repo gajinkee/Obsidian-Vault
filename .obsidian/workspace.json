@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌟HackNotes/ICCA/Cloud Security.md",
+                "file": "🌟HackNotes/ICCA/Cloud Management.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rock",
+                "query": "monitoring",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,7 +73,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌟HackNotes/ICCA/Cloud Security.md",
+                "file": "🌟HackNotes/ICCA/Cloud Management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌟HackNotes/ICCA/Cloud Security.md",
+                "file": "🌟HackNotes/ICCA/Cloud Management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌟HackNotes/ICCA/Cloud Security.md"
+                "file": "🌟HackNotes/ICCA/Cloud Management.md"
               }
             }
           },
@@ -167,6 +168,10 @@
   },
   "active": "972e5abbd8a394ac",
   "lastOpenFiles": [
+    "🌟HackNotes/ICCA/Cloud Security.md",
+    "🌟HackNotes/ICCA/Cloud Management.md",
+    "🌟HackNotes/ICCA/Cloud Foundation.md",
+    "🌟HackNotes/Tryhackme/Jr pentester path/Pentest Fundamentals.md",
     "Misc/Pasted image 20230518213818.png",
     "Misc/Pasted image 20230518212557.png",
     "Misc/Pasted image 20230518174755.png",
@@ -177,10 +182,6 @@
     "Misc/Pasted image 20230518173919.png",
     "Misc/Pasted image 20230518171038.png",
     "Misc/Pasted image 20230517191444.png",
-    "Misc/Pasted image 20230517191232.png",
-    "🌟HackNotes/ICCA/Cloud management.md",
-    "🌟HackNotes/ICCA/Cloud Security.md",
-    "🌟HackNotes/ICCA/Cloud Foundation.md",
     "🌟HackNotes/EJPTv1 notes/Pentest Basics/FootPrinting_Scanning.md",
     "🌟HackNotes/CS50/Cybersecurity.md",
     "🌟HackNotes/Hackthebox 📦/machines/Timelapse.md",
