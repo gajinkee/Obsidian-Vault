@@ -73,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -166,7 +165,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "972e5abbd8a394ac",
+  "active": "d0754dbfb90e7a70",
   "lastOpenFiles": [
     "🌟HackNotes/ICCA/Cloud Security.md",
     "🌟HackNotes/ICCA/Cloud Management.md",
